@@ -1,0 +1,79 @@
+@import './func';
+@import './vars';
+
+.clients {
+    background-color: $bg-secondary;
+    border-top-left-radius: 200px;
+    color: $text-secondary;
+    padding: toEm(96, 16) toEm(16, 16) toEm(125, 16) toEm(96, 16);
+    &__head {
+        display: flex;
+        align-items: center;
+        column-gap: toEm(10, 16);
+    }
+    &__title {
+        flex: 1;
+        font-size: toRem(36);
+        line-height: toPrc(46, 36);
+        letter-spacing: 0.05em;
+    }
+    &__descr {
+        flex: 2;
+        font-size: toRem(16);
+        line-height: toPrc(26, 16);
+        letter-spacing: 0.05em;
+        opacity: 0.6;
+    }
+    &__list {
+        margin-top: toEm(110, 16);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, toEm(235, 16));
+        list-style-type: none;
+    }
+    &__client {
+        padding: toEm(40, 20);
+        font-size: toRem(20);
+        line-height: toPrc(46, 20);
+        letter-spacing: 0.02em;
+        text-align: center;
+        cursor: pointer;
+    }
+    .client {
+        &:first-child {
+            border-bottom: 1px solid #fff;
+            border-right: 1px solid #fff;
+        }
+        &:nth-child(2) {
+            border-bottom: 1px solid #fff;
+            border-right: 1px solid #fff;
+        }
+        &:nth-child(3) {
+            border-bottom: 1px solid #fff;
+            border-right: 1px solid #fff;
+        }
+        &:nth-child(4) {
+            border-bottom: 1px solid #fff;
+        }
+        &:nth-child(5) {
+            border-right: 1px solid #fff;
+        }
+        &:nth-child(6) {
+            border-right: 1px solid #fff;
+        }
+        &:nth-child(7) {
+            border-right: 1px solid #fff;
+        }
+        &:last-child {
+            background: rgba($text-primary, 0.6);
+            text-decoration: none;
+            color: $text-secondary;
+        }
+        &__logoPlaceholder {
+            text-transform: uppercase;
+            font-weight: 500;
+            &:last-child {
+                text-transform: capitalize;
+            }
+        }
+    }
+}
