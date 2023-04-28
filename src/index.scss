@@ -1,10 +1,30 @@
 @import './styles/normalize';
 @import './styles/fonts';
 @import './styles/icons';
+@import './styles/vars';
+@import './styles/func';
 
-body {
+* {
     font-family: Gilroy, serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: $bg-primary;
+}
+
+h1, p {
+    margin-block: 0;
+}
+
+.container {
+    max-width: toEm(960, 16);
+    margin: 0 auto;
+    padding: 0 toEm(10, 16);
+}
+
+@import './styles/header';
+@import './styles/promo';
+@import './styles/services';

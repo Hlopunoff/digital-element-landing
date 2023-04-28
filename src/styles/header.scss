@@ -1,0 +1,21 @@
+@import './func';
+.header {
+    padding: toEm(40, 16) toEm(83, 16) toEm(12, 16) toEm(83, 16);
+    @media (max-width: 567px) {
+        padding: toEm(20, 16) toEm(40, 16) toEm(12, 16) toEm(40, 16);
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__menu {
+        width: toEm(32, 16);
+        height: toEm(32, 16);
+        background-image: url('./assets/icons/burger-menu.svg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,60 @@
+@import './func';
+@import './vars';
+.promo {
+    padding-bottom: toEm(190, 16);
+    background: url('./assets/icons/promo-bg.svg'), linear-gradient(0deg, rgba(152, 195, 232, 0.2) 8.84%, rgba(152, 195, 232, 0) 31.12%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    @media (max-width: 567px) {
+        padding-bottom: toEm(100, 16);
+    }
+    &__title {
+        max-inline-size: toEm(515, 64);
+        padding-top: toEm(90, 64);
+        font-family: Galien, sans-serif;
+        font-size: clamp(toRem(40), 7vw, toRem(64));
+        line-height: toPrc(74, 64);
+        letter-spacing: 0.04em;
+        font-weight: 700;
+        color: $text-primary;
+        @media (max-width: 567px) {
+            margin: 0 auto;
+            padding-top: toEm(45, 40);
+            text-align: center;
+        }
+    }
+    &__descr {
+        max-inline-size: toEm(425, 16);
+        margin-top: toEm(32, 16);
+        font-size: toRem(16);
+        line-height: toPrc(26, 16);
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        color: $text-primary;
+        opacity: 0.6;
+        @media(max-width: 567px) {
+            margin: toEm(5, 16) auto 0 auto;
+            opacity: 0.8;
+            text-align: center;
+            font-weight: 600;
+        }
+    }
+    &__btn {
+        margin-top: toEm(71, 16);
+        padding: toEm(15, 16) toEm(48, 16);
+        box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+        border: none;
+        border-radius: 10px;
+        background-color: $bg-secondary;
+        font-size: toRem(16);
+        line-height: toPrc(26, 16);
+        letter-spacing: 0.04em;
+        color: $text-secondary;
+        cursor: pointer;
+        @media (max-width: 567px) {
+            display: block;
+            margin: toEm(10, 16) auto 0 auto;
+        }
+    }
+}
