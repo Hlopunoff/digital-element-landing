@@ -1,0 +1,19 @@
+{
+  "name": "test-landing",
+  "version": "1.0.0",
+  "description": "This is a test task for digital element",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hlopunoff/digital-element-landing.git"
+  },
+  "author": "Vasiliy Khlopunov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hlopunoff/digital-element-landing/issues"
+  },
+  "homepage": "https://github.com/Hlopunoff/digital-element-landing#readme"
+}
