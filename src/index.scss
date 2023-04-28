@@ -1,0 +1,10 @@
+@import './styles/normalize';
+@import './styles/fonts';
+@import './styles/icons';
+
+body {
+    font-family: Gilroy, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

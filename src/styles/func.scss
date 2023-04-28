@@ -1,0 +1,9 @@
+@function toRem($px) {
+    @return calc($px / 16) + rem;
+}
+@function toEm($childPx, $parentPx) {
+    @return calc($childPx / $parentPx) + em;
+}
+@function toPrc($child, $parent) {
+    @return calc($child / $parent) * 100%;
+}
