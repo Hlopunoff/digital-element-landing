@@ -7,30 +7,48 @@
     color: $text-secondary;
     padding: toEm(96, 16) toEm(16, 16) 0 0;
     &__head {
-        padding-left: toEm(96, 16);
         display: flex;
         align-items: center;
         column-gap: toEm(10, 16);
+        @media (max-width: 1000px) {
+            padding-left: clamp(toEm(20, 16), 3vw, toEm(96, 16));
+        }
+        @media (max-width: 567px) {
+            flex-direction: column;
+            column-gap: 0;
+            row-gap: toEm(10, 16);
+            text-align: center;
+        }
     }
     &__title {
         flex: 1;
-        font-size: toRem(36);
+        font-size: clamp(toRem(24), 5vw, toRem(36));
         line-height: toPrc(46, 36);
         letter-spacing: 0.05em;
     }
     &__descr {
         flex: 2;
-        font-size: toRem(16);
+        font-size: clamp(toRem(14), 3vw, toRem(16));
         line-height: toPrc(26, 16);
         letter-spacing: 0.05em;
         opacity: 0.6;
     }
     &__list {
-        padding-left: toEm(96, 16);
-        margin-top: toEm(110, 16);
+        margin-top: clamp(toEm(50, 16), 10vw, toEm(110, 16));
         display: grid;
         grid-template-columns: repeat(auto-fit, toEm(235, 16));
         list-style-type: none;
+        @media (max-width: 1000px) {
+            padding-left: toEm(96, 16);
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+            padding-left: 0;
+        }
+        @media (max-width: 460px) {
+            grid-template-columns: 1fr;
+        }
     }
     &__client {
         padding: toEm(40, 20);
@@ -39,36 +57,80 @@
         letter-spacing: 0.02em;
         text-align: center;
         cursor: pointer;
+        @media (max-width: 460px) {
+            border-bottom: 1px solid #fff;
+        }
     }
     .client {
         &:first-child {
             border-bottom: 1px solid #fff;
             border-right: 1px solid #fff;
+            @media (max-width: 460px) {
+                border-right: none;
+            }
         }
         &:nth-child(2) {
             border-bottom: 1px solid #fff;
             border-right: 1px solid #fff;
+            @media (max-width: 768px) {
+                border-right: none;
+            }
         }
         &:nth-child(3) {
             border-bottom: 1px solid #fff;
             border-right: 1px solid #fff;
+            @media (max-width: 1000px) {
+                border-right: none;
+            }
         }
         &:nth-child(4) {
             border-bottom: 1px solid #fff;
+            @media (max-width: 1000px) {
+                border-right: 1px solid #fff;
+            }
+            @media (max-width: 768px) {
+                border-right: none;
+                border-left: 1px solid #fff;
+            }
+            @media (max-width: 460px) {
+                border-left: none;
+            }
         }
         &:nth-child(5) {
             border-right: 1px solid #fff;
+            @media (max-width: 1000px) {
+                border-bottom: 1px solid #fff;
+            }
+            @media (max-width: 460px) {
+                border-right: none;
+            }
         }
         &:nth-child(6) {
             border-right: 1px solid #fff;
+            @media (max-width: 1000px) {
+                border-right: none;
+                border-bottom: 1px solid #fff;
+            }
         }
         &:nth-child(7) {
             border-right: 1px solid #fff;
+            @media (max-width: 460px) {
+                border-right: none;
+            }
         }
         &:last-child {
             background: rgba($text-primary, 0.6);
             text-decoration: none;
             color: $text-secondary;
+            @media (max-width: 1000px) {
+                border-right: 1px solid #fff;
+            }
+            @media (max-width: 768px) {
+                border-right: none;
+            }
+            @media (max-width: 460px) {
+                border-bottom: none;
+            }
         }
         &__logoPlaceholder {
             text-transform: uppercase;

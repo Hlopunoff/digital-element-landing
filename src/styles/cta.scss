@@ -14,20 +14,24 @@
         align-items: center;
         justify-content: space-between;
         column-gap: toEm(10, 16);
+        @media (max-width: 440px) {
+            flex-direction: column;
+            row-gap: toEm(10, 16);
+        }
     }
     &__info {
         width: 66%;
     }
     &__title {
         max-inline-size: toEm(350, 36);
-        font-size: toRem(36);
+        font-size: clamp(toRem(24), 5vw, toRem(36));
         line-height: toPrc(46, 36);
         letter-spacing: 0.05em;
         color: $text-secondary;
     }
     &__descr {
-        margin-top: toEm(32, 16);
-        font-size: toRem(16);
+        margin-top: clamp(toEm(16, 16), 6vw, toEm(32, 16));
+        font-size: clamp(toRem(14), 5vw, toRem(16));
         line-height: toPrc(26, 16);
         letter-spacing: 0.05em;
         color: $text-secondary;
@@ -36,7 +40,7 @@
     }
     &__btn {
         border: none;
-        padding: toEm(15, 16) clamp(toEm(40, 16), 7vw, toEm(70, 16));
+        padding: toEm(15, 16) clamp(toEm(20, 16), 5vw, toEm(70, 16));
         border-radius: 10px;
         background-color: $bg-secondary;
         font-size: toRem(16);

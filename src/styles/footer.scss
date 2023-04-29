@@ -3,12 +3,21 @@
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         column-gap: clamp(toEm(50, 16), 10vw, toEm(100, 16));
+        @media (max-width: 610px) {
+            grid-template-columns: 1fr 1fr;
+            row-gap: toEm(10, 16);
+        }
     }
     &__col {
         display: flex;
         flex-direction: column;
         row-gap: toEm(16, 16);
         list-style-type: none;
+        &:first-child {
+            @media (max-width: 610px) {
+                grid-column: span 2;
+            }
+        }
     }
     &__logo {
         margin-bottom: toEm(16, 16);
@@ -51,6 +60,9 @@
         font-size: toRem(20);
         line-height: toPrc(30, 20);
         letter-spacing: 0.05em;
+        @media (max-width: 610px) {
+            margin-bottom: 0;
+        }
     }
     &__colLink {
         text-decoration: none;
