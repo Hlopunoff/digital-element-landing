@@ -1,0 +1,55 @@
+@import './func';
+@import './vars';
+.cta {
+    margin-top: clamp(toEm(80, 16), 10vw, toEm(125, 16));
+    padding: clamp(toEm(65, 16), 10vw, toEm(91, 16)) 0 clamp(toEm(45, 16), 10vw, toEm(64, 16)) 0;
+    background-color: $bg-ternary;
+    border-top-right-radius: 200px;
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(toEm(60, 16), 10vw, toEm(96, 16));
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: toEm(10, 16);
+    }
+    &__info {
+        width: 66%;
+    }
+    &__title {
+        max-inline-size: toEm(350, 36);
+        font-size: toRem(36);
+        line-height: toPrc(46, 36);
+        letter-spacing: 0.05em;
+        color: $text-secondary;
+    }
+    &__descr {
+        margin-top: toEm(32, 16);
+        font-size: toRem(16);
+        line-height: toPrc(26, 16);
+        letter-spacing: 0.05em;
+        color: $text-secondary;
+        opacity: 0.6;
+        max-width: toEm(460, 16);
+    }
+    &__btn {
+        border: none;
+        padding: toEm(15, 16) clamp(toEm(40, 16), 7vw, toEm(70, 16));
+        border-radius: 10px;
+        background-color: $bg-secondary;
+        font-size: toRem(16);
+        line-height: toPrc(26, 16);
+        letter-spacing: 0.04em;
+        color: $text-secondary;
+        cursor: pointer;
+    }
+
+    .divider {
+        width: 84.4%;
+        height: 2px;
+        background-color: #fff;
+        opacity: 0.6;
+    }
+}

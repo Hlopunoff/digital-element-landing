@@ -5,8 +5,9 @@
     background-color: $bg-secondary;
     border-top-left-radius: 200px;
     color: $text-secondary;
-    padding: toEm(96, 16) toEm(16, 16) toEm(125, 16) toEm(96, 16);
+    padding: toEm(96, 16) toEm(16, 16) 0 0;
     &__head {
+        padding-left: toEm(96, 16);
         display: flex;
         align-items: center;
         column-gap: toEm(10, 16);
@@ -25,6 +26,7 @@
         opacity: 0.6;
     }
     &__list {
+        padding-left: toEm(96, 16);
         margin-top: toEm(110, 16);
         display: grid;
         grid-template-columns: repeat(auto-fit, toEm(235, 16));
