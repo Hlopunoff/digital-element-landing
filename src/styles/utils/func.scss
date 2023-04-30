@@ -1,9 +1,11 @@
-@function toRem($px) {
+@function torem($px) {
     @return calc($px / 16) + rem;
 }
-@function toEm($childPx, $parentPx) {
+
+@function toem($childPx, $parentPx) {
     @return calc($childPx / $parentPx) + em;
 }
-@function toPrc($child, $parent) {
+
+@function toprc($child, $parent) {
     @return calc($child / $parent) * 100%;
 }

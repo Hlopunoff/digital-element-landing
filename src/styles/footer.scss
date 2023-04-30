@@ -2,16 +2,16 @@
     &__wrap {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
-        column-gap: clamp(toEm(50, 16), 10vw, toEm(100, 16));
+        column-gap: clamp(toem(50, 16), 10vw, toem(100, 16));
         @media (max-width: 610px) {
             grid-template-columns: 1fr 1fr;
-            row-gap: toEm(10, 16);
+            row-gap: toem(10, 16);
         }
     }
     &__col {
         display: flex;
         flex-direction: column;
-        row-gap: toEm(16, 16);
+        row-gap: toem(16, 16);
         list-style-type: none;
         &:first-child {
             @media (max-width: 610px) {
@@ -20,14 +20,14 @@
         }
     }
     &__logo {
-        margin-bottom: toEm(16, 16);
+        margin-bottom: toem(16, 16);
         display: flex;
         align-items: center;
-        column-gap: toEm(15, 16);
+        column-gap: toem(15, 16);
         text-decoration: none;
         &Name {
-            font-size: toRem(28);
-            line-height: toPrc(46, 28);
+            font-size: torem(28);
+            line-height: toprc(46, 28);
             letter-spacing: 0.02em;
             font-weight: 600;
             color: $text-secondary;
@@ -36,29 +36,29 @@
     &__contacts {
         display: flex;
         flex-direction: column;
-        row-gap: toEm(24, 16);
+        row-gap: toem(24, 16);
     }
     &__contact {
         display: flex;
         align-items: center;
-        column-gap: toEm(16, 16);
+        column-gap: toem(16, 16);
         & strong {
-            font-size: toRem(16);
-            line-height: toPrc(26, 16);
+            font-size: torem(16);
+            line-height: toprc(26, 16);
             letter-spacing: 0.05em;
         }
         &Text {
             text-decoration: none;
-            font-size: toRem(16);
-            line-height: toPrc(26, 16);
+            font-size: torem(16);
+            line-height: toprc(26, 16);
             letter-spacing: 0.05em;
             color: $text-secondary;
         }
     }
     &__colHeading {
-        margin-bottom: toEm(16, 20);
-        font-size: toRem(20);
-        line-height: toPrc(30, 20);
+        margin-bottom: toem(16, 20);
+        font-size: torem(20);
+        line-height: toprc(30, 20);
         letter-spacing: 0.05em;
         @media (max-width: 610px) {
             margin-bottom: 0;
@@ -66,16 +66,16 @@
     }
     &__colLink {
         text-decoration: none;
-        font-size: toRem(16);
-        line-height: toPrc(26, 16);
+        font-size: torem(16);
+        line-height: toprc(26, 16);
         letter-spacing: 0.05em;
         color: $text-secondary;
     }
     &__copyright {
         display: inline-block;
-        margin-top: clamp(toEm(40, 16), 5vw, toEm(64, 16));
-        font-size: toRem(16);
-        line-height: toPrc(26, 16);
+        margin-top: clamp(toem(40, 16), 5vw, toem(64, 16));
+        font-size: torem(16);
+        line-height: toprc(26, 16);
         letter-spacing: 0.05em;
         opacity: 0.4;
     }

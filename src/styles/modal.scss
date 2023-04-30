@@ -13,43 +13,43 @@
     }
     .form {
         position: relative;
-        width: clamp(toEm(260, 16), 80vw, toEm(540, 16));
+        width: clamp(toem(260, 16), 80vw, toem(540, 16));
         background-color: $bg-primary;
         box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
         border-radius: 10px;
-        padding: clamp(toEm(20, 16), 5vw, toEm(56, 16));
+        padding: clamp(toem(20, 16), 5vw, toem(56, 16));
         &__title {
-            font-size: toRem(20);
-            line-height: toPrc(30, 20);
+            font-size: torem(20);
+            line-height: toprc(30, 20);
             letter-spacing: 0.04em;
             color: $text-primary;
             text-transform: uppercase;
         }
         &__body {
-            margin-top: clamp(toEm(20, 16), 5vw, toEm(48, 16));
+            margin-top: clamp(toem(20, 16), 5vw, toem(48, 16));
             display: flex;
             flex-direction: column;
-            row-gap: toEm(32, 16);
+            row-gap: toem(32, 16);
         }
         &__label {
             display: flex;
             flex-direction: column;
-            row-gap: toEm(8, 16);
+            row-gap: toem(8, 16);
             cursor: pointer;
             &Text {
-                font-size: toRem(16);
-                line-height: toPrc(30, 16);
+                font-size: torem(16);
+                line-height: toprc(30, 16);
                 letter-spacing: 0.04em;
                 color: rgba($text-primary, 0.8);
             }
         }
         &__input {
             width: 100%;
-            padding: toEm(21, 16) clamp(toEm(20, 16), 5vw, toEm(42, 16));
-            height: toEm(72, 16);
+            padding: toem(21, 16) clamp(toem(20, 16), 5vw, toem(42, 16));
+            height: toem(72, 16);
             background-color: $bg-primary;
-            font-size: toRem(16);
-            line-height: toPrc(30, 16);
+            font-size: torem(16);
+            line-height: toprc(30, 16);
             letter-spacing: 0.04em;
             color: rgba($text-primary, 0.4);
             border: 1px solid rgba(#356EAD, 0.4);
@@ -59,8 +59,8 @@
                 width: 100%;
                 background: #ac3030;
                 color: $text-secondary;
-                padding: toEm(5, 16);
-                font-size: toRem(16);
+                padding: toem(5, 16);
+                font-size: torem(16);
                 line-height: 100%;
                 border-radius: 10px;
             }
@@ -75,14 +75,14 @@
             }
         }
         &__message {
-            height: toEm(144, 16);
-            padding: toEm(21, 16) clamp(toEm(20, 16), 5vw, toEm(36, 16));
+            height: toem(144, 16);
+            padding: toem(21, 16) clamp(toem(20, 16), 5vw, toem(36, 16));
             border-radius: 10px;
             background-color: $bg-primary;
             resize: none;
             border: 1px solid rgba(#356EAD, 0.4);
             color: rgba($text-primary, 0.4);
-            font-size: toRem(16);
+            font-size: torem(16);
             &::placeholder {
                 color: rgba($text-primary, 0.4);
                 opacity: 1;
@@ -101,15 +101,15 @@
             color: $text-secondary;
             text-transform: uppercase;
             font-weight: 600;
-            padding: toEm(23, 16) 0;
+            padding: toem(23, 16) 0;
             cursor: pointer;
         }
         &__close {
             position: absolute;
             text-align: center;
-            top: toEm(20, 40);
-            right: toEm(20, 40);
-            font-size: toRem(40);
+            top: toem(20, 40);
+            right: toem(20, 40);
+            font-size: torem(40);
             line-height: 100%;
             cursor: pointer;
         }

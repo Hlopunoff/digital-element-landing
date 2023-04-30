@@ -9,28 +9,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: $bg-primary;
 }
+
 h1, p {
     margin-block: 0;
 }
+
 .container {
-    max-width: toEm(960, 16);
+    max-width: toem(960, 16);
     margin: 0 auto;
-    padding: 0 toEm(10, 16);
+    padding: 0 toem(10, 16);
 }
+
 .scroll_disabled {
     overflow-y: hidden;
 }
+
 .popup {
     position: fixed;
     text-align: center;
-    bottom: toEm(20, 16);
-    right: toEm(20, 16);
-    padding: toEm(10, 16);
+    bottom: toem(20, 16);
+    right: toem(20, 16);
+    padding: toem(10, 16);
     border-radius: 10px;
-    font-size: toRem(18);
+    font-size: torem(18);
     line-height: 100%;
     color: $text-secondary;
     &_error {

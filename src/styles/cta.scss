@@ -1,48 +1,48 @@
 .cta {
-    margin-top: clamp(toEm(80, 16), 10vw, toEm(125, 16));
-    padding: clamp(toEm(65, 16), 10vw, toEm(91, 16)) 0 clamp(toEm(45, 16), 10vw, toEm(64, 16)) 0;
+    margin-top: clamp(toem(80, 16), 10vw, toem(125, 16));
+    padding: clamp(toem(65, 16), 10vw, toem(91, 16)) 0 clamp(toem(45, 16), 10vw, toem(64, 16)) 0;
     background-color: $bg-ternary;
     border-top-right-radius: 200px;
     width: 93%;
     display: flex;
     flex-direction: column;
-    row-gap: clamp(toEm(60, 16), 10vw, toEm(96, 16));
+    row-gap: clamp(toem(60, 16), 10vw, toem(96, 16));
     &__wrap {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        column-gap: toEm(10, 16);
+        column-gap: toem(10, 16);
         @media (max-width: 440px) {
             flex-direction: column;
-            row-gap: toEm(10, 16);
+            row-gap: toem(10, 16);
         }
     }
     &__info {
         width: 66%;
     }
     &__title {
-        max-inline-size: toEm(350, 36);
-        font-size: clamp(toRem(24), 5vw, toRem(36));
-        line-height: toPrc(46, 36);
+        max-inline-size: toem(350, 36);
+        font-size: clamp(torem(24), 5vw, torem(36));
+        line-height: toprc(46, 36);
         letter-spacing: 0.05em;
         color: $text-secondary;
     }
     &__descr {
-        margin-top: clamp(toEm(16, 16), 6vw, toEm(32, 16));
-        font-size: clamp(toRem(14), 5vw, toRem(16));
-        line-height: toPrc(26, 16);
+        margin-top: clamp(toem(16, 16), 6vw, toem(32, 16));
+        font-size: clamp(torem(14), 5vw, torem(16));
+        line-height: toprc(26, 16);
         letter-spacing: 0.05em;
         color: $text-secondary;
         opacity: 0.6;
-        max-width: toEm(460, 16);
+        max-width: toem(460, 16);
     }
     &__btn {
         border: none;
-        padding: toEm(15, 16) clamp(toEm(20, 16), 5vw, toEm(70, 16));
+        padding: toem(15, 16) clamp(toem(20, 16), 5vw, toem(70, 16));
         border-radius: 10px;
         background-color: $bg-secondary;
-        font-size: toRem(16);
-        line-height: toPrc(26, 16);
+        font-size: torem(16);
+        line-height: toprc(26, 16);
         letter-spacing: 0.04em;
         color: $text-secondary;
         cursor: pointer;

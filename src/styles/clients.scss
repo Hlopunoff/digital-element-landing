@@ -2,41 +2,41 @@
     background-color: $bg-secondary;
     border-top-left-radius: 200px;
     color: $text-secondary;
-    padding: toEm(96, 16) toEm(16, 16) 0 0;
+    padding: toem(96, 16) toem(16, 16) 0 0;
     &__head {
         display: flex;
         align-items: center;
-        column-gap: toEm(10, 16);
+        column-gap: toem(10, 16);
         @media (max-width: 1000px) {
-            padding-left: clamp(toEm(20, 16), 3vw, toEm(96, 16));
+            padding-left: clamp(toem(20, 16), 3vw, toem(96, 16));
         }
         @media (max-width: 567px) {
             flex-direction: column;
             column-gap: 0;
-            row-gap: toEm(10, 16);
+            row-gap: toem(10, 16);
             text-align: center;
         }
     }
     &__title {
         flex: 1;
-        font-size: clamp(toRem(24), 5vw, toRem(36));
-        line-height: toPrc(46, 36);
+        font-size: clamp(torem(24), 5vw, torem(36));
+        line-height: toprc(46, 36);
         letter-spacing: 0.05em;
     }
     &__descr {
         flex: 2;
-        font-size: clamp(toRem(14), 3vw, toRem(16));
-        line-height: toPrc(26, 16);
+        font-size: clamp(torem(14), 3vw, torem(16));
+        line-height: toprc(26, 16);
         letter-spacing: 0.05em;
         opacity: 0.6;
     }
     &__list {
-        margin-top: clamp(toEm(50, 16), 10vw, toEm(110, 16));
+        margin-top: clamp(toem(50, 16), 10vw, toem(110, 16));
         display: grid;
-        grid-template-columns: repeat(auto-fit, toEm(235, 16));
+        grid-template-columns: repeat(auto-fit, toem(235, 16));
         list-style-type: none;
         @media (max-width: 1000px) {
-            padding-left: toEm(96, 16);
+            padding-left: toem(96, 16);
             grid-template-columns: repeat(3, 1fr);
         }
         @media (max-width: 768px) {
@@ -48,9 +48,9 @@
         }
     }
     &__client {
-        padding: toEm(40, 20);
-        font-size: toRem(20);
-        line-height: toPrc(46, 20);
+        padding: toem(40, 20);
+        font-size: torem(20);
+        line-height: toprc(46, 20);
         letter-spacing: 0.02em;
         text-align: center;
         cursor: pointer;

@@ -1,3 +1,14 @@
 {
-    "extends": "stylelint-config-standard-scss"
+    "extends": "stylelint-config-standard-scss",
+    "rules": {
+        "no-invalid-position-at-import-rule": null,
+        "rule-empty-line-before": null,
+        "at-rule-empty-line-before": null,
+        "selector-class-pattern": null,
+        "comment-empty-line-before": null,
+        "media-feature-range-notation": null,
+        "selector-no-vendor-prefix": null,
+        "color-function-notation": null,
+        "alpha-value-notation": null
+    }
 }

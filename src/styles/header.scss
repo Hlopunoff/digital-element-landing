@@ -1,7 +1,7 @@
 .header {
-    padding: toEm(40, 16) toEm(83, 16) toEm(12, 16) toEm(83, 16);
+    padding: toem(40, 16) toem(83, 16) toem(12, 16) toem(83, 16);
     @media (max-width: 567px) {
-        padding: toEm(20, 16) toEm(40, 16) toEm(12, 16) toEm(40, 16);
+        padding: toem(20, 16) toem(40, 16) toem(12, 16) toem(40, 16);
     }
     &__nav {
         display: flex;
@@ -9,8 +9,8 @@
         justify-content: space-between;
     }
     &__menu {
-        width: toEm(32, 16);
-        height: toEm(32, 16);
+        width: toem(32, 16);
+        height: toem(32, 16);
         background-image: url('./assets/icons/burger-menu.svg');
         background-size: contain;
         background-position: center;
