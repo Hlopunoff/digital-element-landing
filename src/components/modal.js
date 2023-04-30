@@ -45,7 +45,9 @@ export const modal = () => {
     errorMessage.textContent = message;
     errorMessage.classList.add('form__input_error');
 
-    errorField.appendChild(errorMessage);
+    if (!errorField.lastChild.classList?.contains('form__input_error')) {
+      errorField.appendChild(errorMessage);
+    }
   };
 
   // Удаление оповещения об ошибке при заполнении формы

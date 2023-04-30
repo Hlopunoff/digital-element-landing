@@ -33,7 +33,6 @@ h1, p {
     font-size: toRem(18);
     line-height: 100%;
     color: $text-secondary;
-    transition: all ease;
     &_error {
         background-color: #ac3030;
     }
