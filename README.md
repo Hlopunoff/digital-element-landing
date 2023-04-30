@@ -6,9 +6,7 @@
 4. Webpack 5
 5. ESLint
 6. StyleLint
----
 ## Web page: [Демо](https://digital-element-landing.vercel.app/)
----
 ## Для локального запуска:
 1. Клонировать репозиторий
 ```
