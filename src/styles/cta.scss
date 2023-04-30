@@ -1,5 +1,5 @@
-@import './func';
-@import './vars';
+// @import './utils/func';
+// @import './utils/vars';
 .cta {
     margin-top: clamp(toEm(80, 16), 10vw, toEm(125, 16));
     padding: clamp(toEm(65, 16), 10vw, toEm(91, 16)) 0 clamp(toEm(45, 16), 10vw, toEm(64, 16)) 0;

@@ -7,6 +7,10 @@
         "linebreak-style": 0,
         "global-require": 0,
         "eslint linebreak-style": [0, "error", "windows"],
-        "import/prefer-default-export": "off"
+        "import/prefer-default-export": "off",
+        "no-restricted-syntax": "off",
+        "no-control-regex": "off",
+        "consistent-return": "off",
+        "max-classes-pre-file": false
     }
 }

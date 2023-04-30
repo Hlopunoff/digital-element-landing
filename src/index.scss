@@ -1,8 +1,7 @@
-@import './styles/normalize';
-@import './styles/fonts';
-@import './styles/icons';
-@import './styles/vars';
-@import './styles/func';
+@import './styles/utils/normalize';
+@import './styles/utils/fonts';
+@import './styles/utils/vars';
+@import './styles/utils/func';
 
 * {
     font-family: Gilroy, serif;
@@ -10,19 +9,37 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background-color: $bg-primary;
 }
-
 h1, p {
     margin-block: 0;
 }
-
 .container {
     max-width: toEm(960, 16);
     margin: 0 auto;
     padding: 0 toEm(10, 16);
+}
+.scroll_disabled {
+    overflow-y: hidden;
+}
+.popup {
+    position: fixed;
+    text-align: center;
+    bottom: toEm(20, 16);
+    right: toEm(20, 16);
+    padding: toEm(10, 16);
+    border-radius: 10px;
+    font-size: toRem(18);
+    line-height: 100%;
+    color: $text-secondary;
+    transition: all ease;
+    &_error {
+        background-color: #ac3030;
+    }
+    &_success {
+        background-color: #46bd3b;
+    }
 }
 
 @import './styles/header';
@@ -31,3 +48,4 @@ h1, p {
 @import './styles/clients';
 @import './styles/cta';
 @import './styles/footer';
+@import './styles/modal';
